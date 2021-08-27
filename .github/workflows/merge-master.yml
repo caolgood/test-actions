@@ -2,6 +2,8 @@ name: Gitflow
 on: 
   # To create pull requests.
   push:
+    branches:
+      - master
   # To merge pull requests if not possible during the push run. Remove if `auto-merge` is `false`.
   pull_request_review:
   check_run:
@@ -15,7 +17,6 @@ jobs:
     - uses: Logerfo/gitflow-action@0.0.4
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }} # The `GITHUB_TOKEN` secret.
-        release: staging
         dev: develop # The `dev` branch.
         master: master # The `master` branch.
         label: gitflow # The pull request label.

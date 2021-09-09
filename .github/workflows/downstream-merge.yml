@@ -15,7 +15,7 @@ jobs:
     name: Gitflow
     runs-on: ubuntu-latest
     steps:
-    - uses: caseware/gitflow-action@24a011147d4883cd37ec2fe4ba1afa32b06eac12
+    - uses: caseware/gitflow-action@b8acc93ad7f61782d04d6c977efd97aa38d4df42
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }} # The `GITHUB_TOKEN` secret.
         dev: develop # The `dev` branch.
